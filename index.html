@@ -1,1 +1,243 @@
-# lista-presentes-casamento
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lista de Presentes | Asthari & Felipe</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header class="cabecalho">
+
+        <div class="coracao">♥</div>
+
+        <p class="pequeno">
+            NOSSO CASAMENTO
+        </p>
+
+        <h1>
+            Asthari <span>&</span> Felipe
+        </h1>
+
+        <div class="linha">
+            <span></span>
+            ♥
+            <span></span>
+        </div>
+
+        <p class="titulo-lista">
+            Lista de Presentes
+        </p>
+
+        <p class="descricao">
+            Sua presença já é o nosso maior presente.
+            Mas, se desejar nos presentear, preparamos
+            esta lista com muito carinho. 💙
+        </p>
+
+    </header>
+
+
+    <!-- =========================
+         MENU DE CATEGORIAS
+    ========================== -->
+
+    <nav class="categorias">
+
+        <button class="categoria ativa" data-categoria="todos">
+            TODOS
+        </button>
+
+        <button class="categoria" data-categoria="cozinha">
+            🍳 COZINHA
+        </button>
+
+        <button class="categoria" data-categoria="quarto">
+            🛏️ QUARTO
+        </button>
+
+        <button class="categoria" data-categoria="banheiro">
+            🛁 BANHEIRO
+        </button>
+
+        <button class="categoria" data-categoria="casa">
+            🏠 CASA
+        </button>
+
+        <button class="categoria" data-categoria="sala">
+            🛋️ SALA
+        </button>
+
+        <button class="categoria" data-categoria="eletro">
+            ⚡ ELETRO
+        </button>
+
+        <button class="categoria" data-categoria="experiencias">
+            💙 EXPERIÊNCIAS
+        </button>
+
+    </nav>
+
+
+    <!-- =========================
+         LISTA DE PRESENTES
+    ========================== -->
+
+    <main>
+
+        <section class="lista">
+
+            <div class="titulo-secao">
+
+                <h2>
+                    Escolha um presente
+                </h2>
+
+                <p>
+                    Cada presente escolhido fará parte
+                    da nossa nova história juntos. ❤️
+                </p>
+
+            </div>
+
+
+            <!--
+                O JAVASCRIPT VAI CRIAR
+                OS 100 PRESENTES AQUI
+            -->
+
+            <div id="lista-presentes" class="grid-presentes">
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         JANELA DE CONFIRMAÇÃO
+    ========================== -->
+
+    <div id="modal" class="modal">
+
+        <div class="modal-conteudo">
+
+            <button id="fechar-modal" class="fechar">
+                ×
+            </button>
+
+            <div class="modal-coracao">
+                ♥
+            </div>
+
+            <h2>
+                Que presente lindo! 💙
+            </h2>
+
+            <p id="presente-escolhido">
+                Você escolheu este presente.
+            </p>
+
+
+            <form id="form-presente">
+
+                <div class="campo">
+
+                    <label for="nome">
+                        SEU NOME
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="mensagem">
+                        MENSAGEM PARA OS NOIVOS
+                        <span>(opcional)</span>
+                    </label>
+
+                    <textarea
+                        id="mensagem"
+                        placeholder="Deixe uma mensagem para Asthari e Felipe..."
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="botao-confirmar"
+                >
+                    💙 CONFIRMAR PRESENTE
+                </button>
+
+            </form>
+
+
+            <div
+                id="mensagem-sucesso"
+                class="mensagem-sucesso"
+            >
+                ❤️ Obrigado pelo carinho!
+                <br>
+                Seu presente foi escolhido com sucesso.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer>
+
+        <p>
+            Com carinho,
+        </p>
+
+        <h2>
+            Asthari & Felipe
+        </h2>
+
+        <div class="footer-coracao">
+            ♥
+        </div>
+
+        <small>
+            16 de janeiro de 2027
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
